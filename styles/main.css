@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: #262626;
+  }
+  
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f2f2e8;
+  }
+  
+  .heading {
+    position: relative;
+    font: 500 100px 'Megrim';
+    line-height: 150px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transform: skew(-16deg, 1deg);
+    margin: 50px 0;
+  }
+  
+  .heading:before{
+    content: "";
+    display: block;
+    width: 70%;
+    margin: auto;
+    background: #262626;
+    height: 2px;
+    animation: lineanim 2s ease-in-out;
+  }
+  
+  .heading:after{
+    content: "";
+    display: block;
+    width: 70%;
+    margin: auto;
+    background: #262626;
+    height: 2px;
+    animation: lineanim 2s ease-in-out;
+  }
+  
+  @keyframes lineanim {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 100%;
+    }
+    100% {
+      width: 70%;
+    }
+  }
+  
+  .site-name{
+    margin: 20px 0;
+  }
+  
+  .site-name > * {
+    text-align: center;
+    display: block;
+    font-family: "Raleway";
+    margin: 10px 0;
+  }
+  
+  .site-name > h2 {
+    color: #262626;
+    font-size: 50px;
+    font-weight: 200;
+  }
+  
+  strong{
+    font-size: 25px;
+    font-weight: 500;
+  }
+  
+  .contact {
+    font-family: "Raleway";
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .contact > a {
+    text-decoration: 0;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 15px;
+  }
+  
+  
+  .footer {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .icon svg{
+      height: 125px;
+      width: 150px;
+  }
+  
+  @media screen and (max-width: 767px) and (min-width: 601px) {
+    .heading{
+      font: 500 60px 'Megrim';
+      line-height: 80px;
+    }
+    .site-name > h2 {
+      font-size: 35px;
+    }
+    strong {
+      font-size: 25px;
+    }
+    .contact {
+      font-size: 25px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .heading {
+      font: 500 45px 'Megrim';
+      line-height: 70px;
+    }
+    .site-name > h2 {
+      font-size: 30px;
+    }
+    strong {
+      font-size: 20px;
+    }
+    .contact {
+      font-size: 20px;
+    }
+  }
+
+  .animate__animated.animate__fadeInDown {
+    --animate-duration: 2s;
+  }
