@@ -100,10 +100,10 @@
     bottom: 0;
   }
   
-  .icon svg{
-      height: 125px;
-      width: 150px;
-  }
+  /* .icon svg{
+      height: auto;
+      width: 100%;
+  } */
   
   @media screen and (max-width: 767px) and (min-width: 601px) {
     .heading{
