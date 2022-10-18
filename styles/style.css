@@ -1016,5 +1016,36 @@ svg:hover path.st0{
   transform: scale(1.5);
 }
 
+/* Footer Media Query */
 
+@media only screen and (max-width: 768px) {
+  footer h1 {
+    font-size: var(--fs-h3);
+  }
+  footer h2 {
+    font-size: var(--fs-h3);
+  }
+  footer h3 {
+    font-size: var(--fs-h2);
+  }
+  .footer_main{
+    padding-top: 1rem;
+  }
+  footer {
+    height: 40rem;
+    align-content: center;
+  }
+  .logo {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
 
+  .contact {
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    padding-top: 3rem;
+  }
+}
